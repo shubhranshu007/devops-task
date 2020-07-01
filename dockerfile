@@ -1,8 +1,7 @@
 FROM python:3.6.1-alpine
-
+COPY ./templates /app
 COPY requirements.txt /app
 COPY app.py /app
-COPY /templates/ /app
 
 WORKDIR /app
 
